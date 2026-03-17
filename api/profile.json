@@ -1,0 +1,7 @@
+{
+  "customerId": "123456",
+  "name": "Jane Doe",
+  "accountType": "Premium",
+  "status": "Active",
+  "availableBalance": 8425.12
+}
