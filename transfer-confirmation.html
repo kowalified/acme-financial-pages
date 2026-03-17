@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm Transfer | Acme Financial</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="transfer-confirmation">
+  <header class="topbar">
+    <div class="brand">Acme Financial</div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/login">Login</a>
+      <a href="/transfer">Transfer</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Confirm Transfer</h1>
+    <p><strong>Review your transfer details.</strong></p>
+
+    <div class="summary-card">
+      <p><strong>From:</strong> <span id="confirm-from">—</span></p>
+      <p><strong>To:</strong> <span id="confirm-to">—</span></p>
+      <p><strong>Amount:</strong> $<span id="confirm-amount">—</span></p>
+    </div>
+
+    <div class="button-row">
+      <button id="confirm-transfer-btn">Confirm</button>
+      <a class="button-link secondary" href="/transfer">Back</a>
+    </div>
+
+    <div class="footer-note">
+      Demo-only confirmation page.
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
