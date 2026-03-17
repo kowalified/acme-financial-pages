@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme Financial Services</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <div class="brand">Acme Financial</div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/login">Login</a>
+      <a href="/transfer">Transfer</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Customer Portal</div>
+        <h1>Secure access to your accounts and transfers</h1>
+        <p class="lead">
+          A demo financial portal used to showcase Cloudflare application security controls.
+        </p>
+        <div class="button-row">
+          <a class="button-link primary" href="/login">Customer Login</a>
+          <a class="button-link secondary" href="/transfer">Transfer Funds</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="card-grid">
+      <article class="info-card">
+        <h2>Profile API</h2>
+        <p>Fetch a sample customer profile from the API endpoint.</p>
+        <button id="load-profile-btn">Load Profile</button>
+        <pre id="profile-output" class="code-block">No profile loaded yet.</pre>
+      </article>
+
+      <article class="info-card">
+        <h2>Session Status</h2>
+        <p id="session-status">Not signed in.</p>
+      </article>
+    </section>
+
+    <div class="footer-note">
+      Demo-only application. No real authentication or financial transactions occur.
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
