@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Login | Acme Financial</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="login">
+  <header class="topbar">
+    <div class="brand">Acme Financial</div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/login">Login</a>
+      <a href="/transfer">Transfer</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Customer Login</h1>
+    <p>Please enter your credentials to access your account.</p>
+
+    <form id="login-form">
+      <label>
+        Username
+        <input type="text" name="username" id="username" required />
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="password" id="password" required />
+      </label>
+
+      <button type="submit">Log In</button>
+    </form>
+
+    <div class="footer-note">
+      Demo-only login flow. Credentials are not validated against a backend.
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
