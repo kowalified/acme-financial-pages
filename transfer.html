@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transfer Funds | Acme Financial</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="transfer">
+  <header class="topbar">
+    <div class="brand">Acme Financial</div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/login">Login</a>
+      <a href="/transfer">Transfer</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Transfer Funds</h1>
+    <p>Move money securely between accounts. Demo only.</p>
+
+    <form id="transfer-form">
+      <label>
+        From Account
+        <input type="text" name="from" required placeholder="Checking •••• 1234" />
+      </label>
+
+      <label>
+        To Account
+        <input type="text" name="to" required placeholder="Savings •••• 9876" />
+      </label>
+
+      <label>
+        Amount
+        <input type="number" name="amount" step="0.01" min="1" required placeholder="250.00" />
+      </label>
+
+      <button type="submit">Continue</button>
+    </form>
+
+    <div class="footer-note">
+      This page exists to support an Application Security demonstration for high-value actions.
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
